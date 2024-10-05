@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+  
+  @keyframes rotate {
+    0% {
+      -webkit-transform: rotateX(180deg);
+            
+    }
+    100% {
+      -webkit-transform: rotateX(360deg);
+      transform: translateY(-275px);
+             
+    }
+  }
+
+  @keyframes slide-top {
+    0% {
+      -webkit-transform: translateY(0);
+              transform: translateY(0);
+    }
+    100% {
+      -webkit-transform: translateY(-550px);
+              
+    }
+  }
+  
+
+
+
+.triangulo{
+ 
+    position: relative;
+    margin-top: 2px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+
+    width: 0px;
+    height:10px;
+    border-left: 289px solid transparent;
+    border-right: 302px solid transparent;
+    border-bottom: 266px solid #c6aaaa;
+    transform: rotateX(180deg);
+    animation-name: rotate;
+
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+
+   
+}
+.base{
+    background-color: rgb(182, 154, 158);
+    position: absolute;
+    left: 33%;
+ 
+    justify-content: center;
+    align-items: center;
+    display: block;
+    margin:590px auto;
+    width: 582px;
+    height: 370px;
+
+}
+
+.papel{
+
+    border-radius: 15px;
+    padding: 10px;
+    position: absolute;
+    margin-top: 668px;
+    left: 575px;
+    width: 522px;
+    height: 200px;
+    background-color: aqua;
+   
+    animation-name: slide-top;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
+    animation-delay: 3s;
+
+
+}
